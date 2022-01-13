@@ -1,1 +1,52 @@
 Product Management for Inventory-Management app:
+User credentials:
+1.Name
+2.ID number
+3.Role
+Stores the info in the firestore user collection
+
+-Whether check the labour entered is verified by manager / supervisor
+If labour enabled:
+  redirect to dashboard
+Else:
+  your account is still not enabled (screen)
+  
+After enabled:
+  In Dashboard : 
+          
+                1-Products
+                2-Supplier
+                3-Purchase
+1-Product Module:
+    1 Name
+    2 Unit
+        * KG
+        * Litre
+        * Custom
+             $ Price
+             $ Size
+    3 Quantity
+    4 Spec
+    
+Stores the info in the firestore Product collection
+
+2-Supplier Module:
+     1-Store Name
+     2-Store Address
+     3-Store Email
+     4-Store Phone Number
+     
+ Stores the info in the firestore Supplier collection
+ 
+ 3-Purchase Module:
+      1-Fetch all products in the product collections added by labours.
+      2-Get the labour informations from the user collection who ordered the products.
+      3-Get Suppliers info from the Supplier collections which is selected for that product.
+      4-Convert to PDF format and Downloaded.
+      
+     
+     
+
+ 
+   
+
