@@ -10,6 +10,18 @@ class purchaseScreen extends StatelessWidget {
         onPressed: (){},
         child: Icon(Icons.add),
       ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(
+          icon: Icon(Icons.list),
+          label: 'Purchase',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.settings),
+            label: 'Settings',
+          )
+        ],
+      ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
@@ -23,6 +35,25 @@ class purchaseScreen extends StatelessWidget {
               ),
             )),
           ),
+          Column(
+            children: [
+              Card(
+                child: ListTile(
+                  title: Text("VVG stores"),
+                ),
+              ),
+              Card(
+                child: ListTile(
+                  title: Text("Ganapathi silks"),
+                ),
+              ),
+              Card(
+                child: ListTile(
+                  title: Text("Theni anadham"),
+                ),
+              )
+            ],
+          )
         ],
       )
     );
