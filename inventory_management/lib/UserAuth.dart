@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:inventory_management/Dashboard.dart';
+import 'package:inventory_management/purchase.dart';
 
 class UserAuth extends StatelessWidget {
   const UserAuth({Key? key}) : super(key: key);
@@ -16,6 +17,7 @@ class UserAuth extends StatelessWidget {
           key: formkey,
           child: SingleChildScrollView(
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Center(
                   child: Padding(
@@ -92,7 +94,7 @@ class UserAuth extends StatelessWidget {
                           print("Information saved successfully");
                           Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => const dashboard()),
+                            MaterialPageRoute(builder: (context) => const purchaseScreen()),
                           );
                         }
                       }),

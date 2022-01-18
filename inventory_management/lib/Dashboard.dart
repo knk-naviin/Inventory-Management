@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:inventory_management/purchase.dart';
 
 class dashboard extends StatelessWidget {
   const dashboard({Key? key}) : super(key: key);
@@ -7,7 +8,15 @@ class dashboard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Text("Dashboard"),
+        child: OutlinedButton(
+          onPressed: (){
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => purchaseScreen()),
+            );
+          },
+          child: Text("Press for next screen"),
+        ),
       ),
     );
   }
