@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:inventory_management/Dashboard.dart';
 
 class UserAuth extends StatelessWidget {
   const UserAuth({Key? key}) : super(key: key);
@@ -82,9 +83,17 @@ class UserAuth extends StatelessWidget {
                       color: CupertinoColors.systemBlue,
                       child: Text("Submit"),
                       onPressed: () {
+                        // Within the `FirstRoute` widget
+
+
+
                         if (formkey.currentState!.validate()) {
                           (formkey.currentState!.save());
                           print("Information saved successfully");
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => const dashboard()),
+                          );
                         }
                       }),
                 )
