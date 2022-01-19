@@ -12,8 +12,9 @@ class supplierScreen extends StatelessWidget {
         appBar: AppBar(
           elevation: 5,
           //toolbarHeight: 50,
-          centerTitle: true,
+          centerTitle: false,
           backgroundColor: Colors.red,
+
           title: Text(
             "Suppliers",
             style: TextStyle(fontSize: 30),
@@ -34,7 +35,7 @@ class supplierScreen extends StatelessWidget {
                 padding: const EdgeInsets.all(8.0),
                 child: Container(
                     width: 370,
-                    height: 70,
+                    height: 60,
                     child: Card(
                       color: Colors.white,
                       elevation: 5,

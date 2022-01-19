@@ -91,11 +91,9 @@ class UserAuth extends StatelessWidget {
                           if (formkey.currentState!.validate()) {
                             (formkey.currentState!.save());
                             print("Information saved successfully");
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const purchaseScreen()),
-                            );
+                            Navigator.of(context)
+                                .pushReplacementNamed(
+                                "/purchase");
                           }
                         }),
                   )
