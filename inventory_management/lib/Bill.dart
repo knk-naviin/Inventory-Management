@@ -7,6 +7,18 @@ class bill extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        appBar: AppBar(
+          title: Text("Billing Details"),
+          backgroundColor: Colors.red,
+          elevation: 0,
+          actions: [
+            IconButton(
+              tooltip: "print",
+                onPressed: (){},
+                icon: Icon(Icons.download)
+            )
+          ],
+        ),
         backgroundColor: Colors.white,
         body: SingleChildScrollView(
           child: Column(
@@ -22,50 +34,59 @@ class bill extends StatelessWidget {
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
                     "Shop Details",
-                    style: TextStyle(fontSize: 27,decoration: TextDecoration.underline,fontWeight: FontWeight.bold),
+                    style: TextStyle(
+                        fontSize: 27,
+                        decoration: TextDecoration.underline,
+                        fontWeight: FontWeight.bold),
                   ),
                 ),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text("Shop name:",style: TextStyle(
-                      fontSize: 20
-                  ),),
+                  Text(
+                    "Shop name:",
+                    style: TextStyle(fontSize: 20),
+                  ),
                   SizedBox(
                     width: 20,
                   ),
-                  Text("VVG",style: TextStyle(
-                    fontSize: 17
-                  ),)
+                  Text(
+                    "VVG",
+                    style: TextStyle(fontSize: 17),
+                  )
                 ],
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text("Shop Phone:",style: TextStyle(
-                      fontSize: 20
-                  ),),
+                  Text(
+                    "Shop Phone:",
+                    style: TextStyle(fontSize: 20),
+                  ),
                   SizedBox(
                     width: 20,
                   ),
-                  Text("1234567890",style: TextStyle(
-                      fontSize: 17
-                  ),)
+                  Text(
+                    "1234567890",
+                    style: TextStyle(fontSize: 17),
+                  )
                 ],
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text("Shop email:",style: TextStyle(
-                      fontSize: 20
-                  ),),
+                  Text(
+                    "Shop email:",
+                    style: TextStyle(fontSize: 20),
+                  ),
                   SizedBox(
                     width: 20,
                   ),
-                  Text("example@navir.com",style: TextStyle(
-                      fontSize: 17
-                  ),)
+                  Text(
+                    "example@navir.com",
+                    style: TextStyle(fontSize: 17),
+                  )
                 ],
               ),
               Align(
@@ -74,7 +95,10 @@ class bill extends StatelessWidget {
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
                     "Purchase List",
-                    style: TextStyle(fontSize: 27,decoration: TextDecoration.underline,fontWeight: FontWeight.bold),
+                    style: TextStyle(
+                        fontSize: 27,
+                        decoration: TextDecoration.underline,
+                        fontWeight: FontWeight.bold),
                   ),
                 ),
               ),
@@ -111,7 +135,6 @@ class bill extends StatelessWidget {
                   ),
                 ),
               ),
-        
             ],
           ),
         ),
