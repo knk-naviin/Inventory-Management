@@ -6,16 +6,18 @@ class dashboard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: OutlinedButton(
-          onPressed: (){
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => purchaseScreen()),
-            );
-          },
-          child: Text("Press for next screen"),
+    return SafeArea(
+      child: Scaffold(
+        body: Center(
+          child: OutlinedButton(
+            onPressed: (){
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => purchaseScreen()),
+              );
+            },
+            child: Text("Press for next screen"),
+          ),
         ),
       ),
     );

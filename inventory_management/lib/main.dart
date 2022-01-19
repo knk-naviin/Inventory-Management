@@ -15,12 +15,14 @@ class Inventory_Management extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: AnimatedSplashScreen(
-          splash: Text("Invertory Management", style: TextStyle(
-              fontSize: 60
-          ),),
-          nextScreen: UserAuth()
+    return SafeArea(
+      child: Scaffold(
+        body: AnimatedSplashScreen(
+            splash: Text("Invertory Management", style: TextStyle(
+                fontSize: 60
+            ),),
+            nextScreen: UserAuth()
+        ),
       ),
     );
   }
