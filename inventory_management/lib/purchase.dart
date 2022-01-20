@@ -7,12 +7,14 @@ class purchaseScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
           title: Text("Purchase List"),
           backgroundColor: Colors.red,
-          elevation: 0,
+          elevation: 6,
         ),
         floatingActionButton: FloatingActionButton(
           backgroundColor: Colors.red,
@@ -23,20 +25,6 @@ class purchaseScreen extends StatelessWidget {
             );
           },
           child: Icon(Icons.add),
-        ),
-        bottomNavigationBar: BottomNavigationBar(
-          items: [
-            BottomNavigationBarItem(
-            icon: Icon(Icons.list),
-            label: 'Purchase',
-                backgroundColor: Colors.red
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.settings),
-              label: 'Settings',
-              backgroundColor: Colors.red
-            )
-          ],
         ),
         body: Column(
           mainAxisAlignment: MainAxisAlignment.start,

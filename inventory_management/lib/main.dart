@@ -1,5 +1,6 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:inventory_management/Dashboard.dart';
 import 'package:inventory_management/UserAuth.dart';
 import 'package:inventory_management/purchase.dart';
 
@@ -7,10 +8,10 @@ void main(){
   runApp(
        MaterialApp(
          routes: <String, WidgetBuilder>{
-           '/purchase': (BuildContext context) => purchaseScreen(),
+           '/dashboard': (BuildContext context) => const dashboard(),
+           '/userauth': (BuildContext context) => const UserAuth(),
          },
-        debugShowCheckedModeBanner: false,
-    home: Inventory_Management(),
+        debugShowCheckedModeBanner: false, home: Inventory_Management(),
   ));
 }
 

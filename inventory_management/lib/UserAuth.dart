@@ -92,8 +92,7 @@ class UserAuth extends StatelessWidget {
                             (formkey.currentState!.save());
                             print("Information saved successfully");
                             Navigator.of(context)
-                                .pushReplacementNamed(
-                                "/purchase");
+                                .pushReplacementNamed("/dashboard");
                           }
                         }),
                   )
