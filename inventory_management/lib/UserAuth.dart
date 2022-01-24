@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 import 'package:inventory_management/Dashboard.dart';
 import 'package:inventory_management/purchase.dart';
 
@@ -9,6 +10,7 @@ class UserAuth extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    google _googleSignIn = GoogleSignIn
     GlobalKey<FormState> formkey = GlobalKey<FormState>();
     String email,password;
 
@@ -23,66 +25,8 @@ class UserAuth extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Center(
-                    child: Padding(
-                      padding: const EdgeInsets.only(top: 18.0),
-                      child: Text(
-                        "Navir",
-                        style: TextStyle(
-                            fontSize: 100,
-                            color: Colors.white,
-                            backgroundColor: Colors.red),
-                      ),
-                    ),
-                  ),
-                  Container(
-                    padding: EdgeInsets.only(top: 20, right: 10, left: 10),
-                    child: Card(
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      child: Container(
-                        color: Colors.black12,
-                        padding: EdgeInsets.only(left: 12),
-                        child: TextFormField(
-                          validator: (value) {
-                            if (value!.isEmpty) {
-                              return "required name";
-                            }
-                          },
-                          decoration: InputDecoration(
-                            hintText: "Enter Your name",
-                            border: InputBorder.none,
-                            fillColor: Colors.white,
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                  Container(
-                    padding: EdgeInsets.only(top: 20, right: 10, left: 10),
-                    child: Card(
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      child: Container(
-                        color: Colors.black12,
-                        padding: EdgeInsets.only(left: 12),
-                        child: TextFormField(
-                          validator: (value) {
-                            if (value!.isEmpty) {
-                              return "required id number";
-                            }
-                          },
-                          decoration: InputDecoration(
-                            hintText: "Enter Your ID number",
-                            border: InputBorder.none,
-                            fillColor: Colors.white,
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
+                  Center(child: Image.asset('assest/navirlogo.jpeg')),
+                  GoogleSignIn _googleSignIn = GoogleSignIn(),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: CupertinoButton(
