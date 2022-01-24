@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "135087904033",
+    "project_id": "inventorymanagement-a6fad",
+    "storage_bucket": "inventorymanagement-a6fad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:135087904033:android:555e856f2656e5436d5a60",
+        "android_client_info": {
+          "package_name": "com.yaash.inventory_management"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "135087904033-ntt1ml30ivinfqse4hqu3646b3gptsob.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMlKoL2zEaQQJIORsAmec604oANJ-llQc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "135087904033-ntt1ml30ivinfqse4hqu3646b3gptsob.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

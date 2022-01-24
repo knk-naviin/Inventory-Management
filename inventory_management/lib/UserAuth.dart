@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:inventory_management/Dashboard.dart';
@@ -9,6 +10,8 @@ class UserAuth extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     GlobalKey<FormState> formkey = GlobalKey<FormState>();
+    String email,password;
+
 
     return GestureDetector(
       onTap: () => FocusScope.of(context).unfocus(),
@@ -90,6 +93,12 @@ class UserAuth extends StatelessWidget {
 
                           if (formkey.currentState!.validate()) {
                             (formkey.currentState!.save());
+                            FirebaseAuth.instance.createUserWithEmailAndPassword(email: "email@google.com", password: "password").
+                                then((value) => {
+                                  print("Email saved in firebase")
+                            }).catchError((onError){
+                              print(onError);
+                            });
                             print("Information saved successfully");
                             Navigator.of(context)
                                 .pushReplacementNamed("/dashboard");
