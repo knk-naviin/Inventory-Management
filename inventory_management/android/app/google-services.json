@@ -1,33 +1,41 @@
 {
   "project_info": {
-    "project_number": "135087904033",
-    "project_id": "inventorymanagement-a6fad",
-    "storage_bucket": "inventorymanagement-a6fad.appspot.com"
+    "project_number": "957912063597",
+    "project_id": "invertory-f13bf",
+    "storage_bucket": "invertory-f13bf.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:135087904033:android:555e856f2656e5436d5a60",
+        "mobilesdk_app_id": "1:957912063597:android:26c018a0bf996b64e1a964",
         "android_client_info": {
           "package_name": "com.yaash.inventory_management"
         }
       },
       "oauth_client": [
         {
-          "client_id": "135087904033-ntt1ml30ivinfqse4hqu3646b3gptsob.apps.googleusercontent.com",
+          "client_id": "957912063597-kdnbq7p8r87bvcu2b8gmlvhooqegh7r7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.yaash.inventory_management",
+            "certificate_hash": "e71c399dbaf364bf41b5ec10f955747182960993"
+          }
+        },
+        {
+          "client_id": "957912063597-s7q4ictqrk514qsj0g10s09rmjunla43.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCMlKoL2zEaQQJIORsAmec604oANJ-llQc"
+          "current_key": "AIzaSyBuvgJ1BVed40oCNBdhI0tTqGYnwwobIh8"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "135087904033-ntt1ml30ivinfqse4hqu3646b3gptsob.apps.googleusercontent.com",
+              "client_id": "957912063597-s7q4ictqrk514qsj0g10s09rmjunla43.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
